@@ -5,9 +5,9 @@ public class Main {
     long a = scanner.nextLong();
     long b = scanner.nextLong();
 
-    if ((b / a) == 0 || (a / b) == 0){
+    if ((b % a) == 0 || (a % b) == 0){
       System.out.println("Multiples");
-    } else {
+    } else if ((a / b) != 0 || (b / a) != 0) {
       System.out.println("No Multiples");
     }
   }
